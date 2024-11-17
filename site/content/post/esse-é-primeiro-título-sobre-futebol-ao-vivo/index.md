@@ -3,6 +3,8 @@ title: Esse é Primeiro Título sobre Futebol Ao Vivo
 date: 2024-11-17T02:55:35.184Z
 description: 5 motivos para você começar assistir futebol ao vivo.
 image: os-10-maiores-jogadores-da-história-do-são-paulo-.webp
+categories: Futebol ao Vivo
+tags: Flamengo
 ---
 O sábado, 16 de novembro, chega repleto de emoções no [futebol ao vivo](https://afolhahoje.com/futebol-ao-vivo/), os jogos de hoje conta com com partidas decisivas pelas Eliminatórias da Copa do Mundo, Liga das Nações da UEFA e Série B do Brasileirão. Seja em disputas continentais ou no cenário nacional, os confrontos prometem movimentar a torcida em diferentes horários.
 
