@@ -20,14 +20,26 @@ collections:
   - label: Body
     name: body
     widget: markdown
-  - default: []
-    label: Categories
+  - collection: categories
+    default: []
+    display_fields:
+    - title
+    label: Categorias
     name: categories
-    widget: list
-  - default: []
+    search_fields:
+    - title
+    value_field: title
+    widget: relation
+  - collection: tags
+    default: []
+    display_fields:
+    - title
     label: Tags
     name: tags
-    widget: list
+    search_fields:
+    - title
+    value_field: title
+    widget: relation
   - label: SEO Title
     name: seo_title
     required: false
@@ -37,7 +49,7 @@ collections:
     required: false
     widget: text
   folder: site/content/post
-  label: Post
+  label: Artigos
   name: post
   path: '{{slug}}/index'
 - files:
@@ -249,7 +261,7 @@ collections:
     file: site/content/values/_index.md
     label: Values Page
     name: values
-  label: Pages
+  label: Páginas
   name: pages
 - files:
   - fields:
@@ -282,7 +294,7 @@ collections:
     file: site/hugo.toml
     label: Hugo Config
     name: config
-  label: Site Settings
+  label: Configurações do Site
   name: site_settings
 - create: true
   fields:
