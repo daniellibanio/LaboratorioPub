@@ -15,3 +15,18 @@ collections:
       - { name: "date", label: "Data", widget: "datetime" }
       - { name: "image", label: "Imagem Destaque", widget: "image" }
       - { name: "body", label: "Conteúdo", widget: "markdown" }
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    fields:
+      - { name: "title", label: "Título", widget: "string" } # Campo para o título
+      - { name: "date", label: "Data", widget: "datetime" } # Campo para a data
+      - { name: "image", label: "Imagem Destaque", widget: "image" } # Campo para imagem destacada
+      - { name: "categories", label: "Categorias", widget: "list", default: [] } # Campo para categorias
+      - { name: "tags", label: "Tags", widget: "list", default: [] } # Campo para tags
+      - { name: "seo_title", label: "Título SEO", widget: "string", required: false } # Campo para título SEO
+      - { name: "seo_description", label: "Descrição SEO", widget: "text", required: false } # Campo para descrição SEO
+      - { name: "body", label: "Conteúdo", widget: "markdown" } # Editor de conteúdo
