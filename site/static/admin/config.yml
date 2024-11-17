@@ -36,24 +36,11 @@ collections:
     name: seo_description
     required: false
     widget: text
-  - &id001
-    label: SEO Título
-    name: seo_title
-    required: false
-    widget: string
-  - &id002
-    label: SEO Descrição
-    name: seo_description
-    required: false
-    widget: text
   folder: site/content/post
   label: Post
   name: post
   path: '{{slug}}/index'
-- fields:
-  - *id001
-  - *id002
-  files:
+- files:
   - fields:
     - label: Title
       name: title
@@ -323,5 +310,5 @@ collections:
   folder: site/content/tags
   label: Tags
   name: tags
-media_folder: static/img/uploads
-public_folder: /img/uploads
+media_folder: site/static/img
+public_folder: img
