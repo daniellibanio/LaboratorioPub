@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # Branch principal do repositório
+
+media_folder: "static/uploads" # Onde as imagens são salvas
+public_folder: "/uploads" # Caminho público para as imagens
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    fields:
+      - { name: "title", label: "Título", widget: "string" }
+      - { name: "date", label: "Data", widget: "datetime" }
+      - { name: "image", label: "Imagem Destaque", widget: "image" }
+      - { name: "body", label: "Conteúdo", widget: "markdown" }
