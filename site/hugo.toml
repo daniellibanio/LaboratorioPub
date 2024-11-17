@@ -2,7 +2,11 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Laboratório Pub"
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
 
 [params]
 images = ["img/og-image.jpg"]
+
+[taxonomies]
+category = "categories"
+tag = "tags"
