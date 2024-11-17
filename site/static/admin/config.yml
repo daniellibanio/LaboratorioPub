@@ -17,6 +17,11 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Categories", name: "categories", widget: "list", default: []}
+      - {label: "Tags", name: "tags", widget: "list", default: []}
+      - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
+      - {label: "SEO Description", name: "seo_description", widget: "text", required: false}
+
   - name: "pages"
     label: "Pages"
     files:
@@ -36,7 +41,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Products", name: products, widget: list, fields: [
               {label: "Image", name: "image", widget: "image"},
               {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Values", name: "values", widget: "object", fields: [
+          - {label: "Values", name: values, widget: object, fields: [
               {label: "Heading", name: "heading", widget: string},
               {label: "Text", name: "text", widget: "text"}]}
       - file: "site/content/contact/_index.md"
