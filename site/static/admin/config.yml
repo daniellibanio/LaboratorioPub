@@ -36,6 +36,7 @@ collections:
     - title
     label: Tags
     name: tags
+    required: false
     search_fields:
     - title
     value_field: title
